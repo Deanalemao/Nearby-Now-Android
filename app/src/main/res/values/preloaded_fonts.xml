@@ -5,5 +5,7 @@
         <item>@font/open_sans_light</item>
         <item>@font/open_sans_semibold</item>
         <item>@font/scope_one</item>
+        <item>@font/solway</item>
+        <item>@font/solway_light</item>
     </array>
 </resources>
