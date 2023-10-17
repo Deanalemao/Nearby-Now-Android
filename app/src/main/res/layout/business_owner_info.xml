@@ -88,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstname_ed"
         app:layout_constraintTop_toBottomOf="@+id/lastname_txt"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <TextView
         android:id="@+id/gender_txt"
@@ -106,7 +106,6 @@
         android:layout_width="318dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="440dp"
         android:background="@drawable/input_field"
         android:hint="gender"
         android:inputType="text"
@@ -117,7 +116,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lastname_ed"
         app:layout_constraintTop_toBottomOf="@+id/gender_txt"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <TextView
         android:id="@+id/contact_pr_txt"
@@ -136,7 +135,7 @@
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/input_field"
-        android:hint="conatct"
+        android:hint="contact"
         android:inputType="text"
         android:padding="7dp"
         android:textSize="18sp"
@@ -184,7 +183,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact__pr_ed"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintVertical_bias="0.539" />
 </androidx.constraintlayout.widget.ConstraintLayout>
