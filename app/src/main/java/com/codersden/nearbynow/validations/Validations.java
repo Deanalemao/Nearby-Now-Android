@@ -36,4 +36,17 @@ public class Validations {
     }
 
 
+    /**
+     * Method to validate username
+     * @param username The username to validate
+     * <p><li>Username must begin with a letter</li></p>
+     * <p><li>Username can contain letters, number (.), ( _ ), (-) </li></p>
+     * @return {@code true} if username is valid, {@code false} otherwise.
+     */
+    public boolean isUsername(String username){
+        String usernamePattern="[A-Za-z]+[A-Za-z0-9_.-]{2,10}";
+        return  Pattern.compile(usernamePattern).matcher(username).matches();
+    }
+
+
 }
