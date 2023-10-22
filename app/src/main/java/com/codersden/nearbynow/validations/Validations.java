@@ -16,11 +16,23 @@ public class Validations {
      *              <li>{@code [.]}The Domain Label should be followed by a (dot.) </li>
      *              <li>[a-z]{2,6} : Top-Level-Domain must have min 2 max 6 lower case letter only</li>
      *              </ul></p>
-     * @return {@code true} if email is valid, {@code false} otherwise
+     * @return {@code true} if email is valid, {@code false} otherwise.
      */
     public boolean isEmail(String email){
         String emailPattern="^[A-Za-z]+[A-Za-z0-9+_.-]{2,64}+@+[a-z]{5,8}+[.]+[a-z]{2,6}$";
         return Pattern.compile(emailPattern).matcher(email).matches();
+    }
+
+    /**
+     * Method to validate phone number
+     * @param phoneNumber The phone number to validate
+     * <p><ul><li>[6-9] The first number must be any number from 6-9</li>
+     * <li>[0-9]{9} The next part of phone number must have 9 numbers from 0-9</li></ul></p>
+     * @return {@code true} if number is valid, {@code false} otherwise.
+     */
+    public boolean isPhoneNumber(String phoneNumber){
+        String phoneNumberPattern="[6-9][0-9]{9}";
+        return Pattern.compile(phoneNumberPattern).matcher(phoneNumber).matches();
     }
 
 
