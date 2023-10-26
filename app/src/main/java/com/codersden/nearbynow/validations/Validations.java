@@ -89,5 +89,15 @@ public class Validations {
         return !state.equals(defaultSelection);
     }
 
+    /**
+     * Methos to validate district
+     * @param district the district to validate
+     * @return {@code true} if district is valid, {@code false} otherwise.
+     */
+    public boolean isDistrict(String district){
+        String districtPattern="[A-Za-z]{3,50}";
+        return  Pattern.compile(districtPattern).matcher(district).matches();
+    }
+
 
 }
