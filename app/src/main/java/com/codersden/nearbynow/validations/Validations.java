@@ -99,5 +99,15 @@ public class Validations {
         return  Pattern.compile(districtPattern).matcher(district).matches();
     }
 
+    /**
+     * Methos to validate pinCode
+     * @param pinCode the pinCode to validate
+     * @return {@code true} if pinCode is valid, {@code false} otherwise.
+     */
+    public boolean isPinCode(String pinCode){
+        String pinCodePattern="[0-9]{6}";
+        return  Pattern.compile(pinCodePattern).matcher(pinCode).matches();
+    }
+
 
 }
