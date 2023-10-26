@@ -59,5 +59,15 @@ public class Validations {
         return  Pattern.compile(passwordPattern).matcher(password).matches();
     }
 
+    /**
+     * Method to validate if bith passwords match
+     * @param password password entered by user
+     * @param confirmPassword password entered by user for confirmation
+     * @return {@code true} if both password match, {@code false} otherwise.
+     */
+    public boolean isPasswordSame(String password,String confirmPassword){
+        return password.equals(confirmPassword);
+    }
+
 
 }
