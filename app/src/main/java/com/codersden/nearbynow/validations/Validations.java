@@ -48,5 +48,16 @@ public class Validations {
         return  Pattern.compile(usernamePattern).matcher(username).matches();
     }
 
+    /**
+     * Method to validate password
+     * @param password The password to validate
+     * @return {@code true} if password is valid, {@code false} otherwise.
+     * <p><li>Password must be min 8 character and max 20 characters</li></p>
+     */
+    public boolean isPassword(String password){
+        String passwordPattern="[A-Za-z0-9_.-]{8,20}";
+        return  Pattern.compile(passwordPattern).matcher(password).matches();
+    }
+
 
 }
