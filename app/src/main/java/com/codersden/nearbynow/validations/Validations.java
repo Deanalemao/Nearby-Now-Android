@@ -109,5 +109,25 @@ public class Validations {
         return  Pattern.compile(pinCodePattern).matcher(pinCode).matches();
     }
 
+    /**
+     * Methos to validate landmark
+     * @param landmark the landmark to validate
+     * @return {@code true} if landmark is valid, {@code false} otherwise.
+     */
+    public boolean isLandmark(String landmark){
+        String landmarkPattern="[A-Za-z0-9]{3,150}";
+        return  Pattern.compile(landmarkPattern).matcher(landmark).matches();
+    }
+
+    /**
+     * Methos to validate address
+     * @param address the address to validate
+     * @return {@code true} if address is valid, {@code false} otherwise.
+     */
+    public boolean isAddress(String address){
+        String addressPattern="[A-Za-z0-9]{3,150}";
+        return  Pattern.compile(addressPattern).matcher(address).matches();
+    }
+
 
 }
