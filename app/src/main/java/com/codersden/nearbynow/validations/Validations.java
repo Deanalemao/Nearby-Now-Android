@@ -79,5 +79,15 @@ public class Validations {
         return !country.equals(defaultSelection);
     }
 
+    /**
+     * Method to check id state is selected
+     * @param state country selection
+     * @return @code true} if state is selected {@code false} otherwise.
+     */
+    public boolean isStateSelected(String state){
+        String defaultSelection ="choose";
+        return !state.equals(defaultSelection);
+    }
+
 
 }
