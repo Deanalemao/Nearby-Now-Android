@@ -69,5 +69,15 @@ public class Validations {
         return password.equals(confirmPassword);
     }
 
+    /**
+     * Method to check id country is selected
+     * @param country country selection
+     * @return @code true} if country is selected {@code false} otherwise.
+     */
+    public boolean isCountrySelected(String country){
+        String defaultSelection ="choose";
+        return !country.equals(defaultSelection);
+    }
+
 
 }
