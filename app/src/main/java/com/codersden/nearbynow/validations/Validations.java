@@ -123,5 +123,10 @@ public class Validations {
         return  Pattern.compile(addressPattern).matcher(address).matches();
     }
 
+    public boolean isBusinessName(String name){
+        String businessNamePattern="[A-Za-z0-9]{3,50}";
+        return Pattern.compile(businessNamePattern).matcher(name).matches();
+    }
+
 
 }
