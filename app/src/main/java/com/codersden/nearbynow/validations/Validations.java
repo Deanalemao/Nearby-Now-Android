@@ -143,4 +143,9 @@ public class Validations {
         return Pattern.compile(timePattern).matcher(time).matches();
     }
 
+    public boolean isPrice(String price){
+        String pricePattern="[0-9]{1,7}";
+        return Pattern.compile(pricePattern).matcher(price).matches();
+    }
+
 }
