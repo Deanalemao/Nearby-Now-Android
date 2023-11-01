@@ -91,6 +91,18 @@ public class Validations {
         return  Pattern.compile(pinCodePattern).matcher(pinCode).matches();
     }
 
+
+    /**
+     * Method to check if item is selected
+     * @param selection country selection
+     * @return @code true} if item is selected {@code false} otherwise.
+     */
+    public boolean isSelected(String selection){
+        String defaultSelection ="choose";
+        return !selection.equals(defaultSelection);
+    }
+
+
     /**
      * Methos to validate landmark
      * @param landmark the landmark to validate
