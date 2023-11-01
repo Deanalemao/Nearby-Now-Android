@@ -128,5 +128,14 @@ public class Validations {
         return Pattern.compile(businessNamePattern).matcher(name).matches();
     }
 
+    public boolean isBusinessType(String type){
+        String businessTypePattern="[A-Za-z]{3,50}";
+        return Pattern.compile(businessTypePattern).matcher(type).matches();
+    }
+
+    public boolean isDate(String date){
+        String datePattern="[0-9]{4}";
+        return Pattern.compile(datePattern).matcher(date).matches();
+    }
 
 }
