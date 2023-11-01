@@ -138,4 +138,9 @@ public class Validations {
         return Pattern.compile(datePattern).matcher(date).matches();
     }
 
+    public boolean isTime(String time){
+        String timePattern="[0-9]{1,2}+:+[0-9]{1,2}+[AMPamp]{2}";
+        return Pattern.compile(timePattern).matcher(time).matches();
+    }
+
 }
